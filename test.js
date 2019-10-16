@@ -4,15 +4,15 @@ test("Word Pattern is a function", () => {
   expect(typeof wordPattern).toEqual("function");
 });
 
-test('pattern = "abba", str = "dog cat cat dog" should return truth', () => {
+test('pattern = "abba", str = "dog cat cat dog" should return true', () => {
   expect(wordPattern("abba", "dog cat cat dog")).toBeTruthy();
 });
 
-test('pattern = "aaaa", str = "dog dog dog dog" should return truth', () => {
+test('pattern = "aaaa", str = "dog dog dog dog" should return true', () => {
   expect(wordPattern("aaaa", "dog dog dog dog")).toBeTruthy();
 });
 
-test('pattern = "aaaa", str = "dog dog cat cat" should return truth', () => {
+test('pattern = "aaaa", str = "dog dog cat cat" should return true', () => {
   expect(wordPattern("aabb", "dog dog cat cat")).toBeTruthy();
 });
 

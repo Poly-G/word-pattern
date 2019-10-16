@@ -6,7 +6,7 @@ Given a `pattern` and a string `st`r, find if `str` follows the same `pattern`.
 
 `follow` means a full match, such that there is a bijection between a letter in pattern and a non-empty word in str.
 
-Notes:
+**Notes:**
 You may assume pattern contains only lowercase letters, and str contains lowercase letters that may be separated by a single space.
 
 ## Installation
