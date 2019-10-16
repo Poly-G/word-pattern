@@ -4,11 +4,22 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest",
+        "test:coverage": "npm test -- --coverage",
+        "test:badges": "npm run test:coverage  && jest-coverage-badges"
+
     },
     "jest": {
-        "testEnvironment": "node"
+        "testEnvironment": "node",
+        "coverageReporters": [
+            "json-summary",
+            "text",
+            "lcov"
+        ]
     },
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "jest-coverage-badges": "^1.1.2"
+    }
 }
