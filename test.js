@@ -1,0 +1,1 @@
+const wordPattern = require("./index");
