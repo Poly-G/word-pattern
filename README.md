@@ -11,7 +11,7 @@ You may assume pattern contains only lowercase letters, and str contains lowerca
 
 ## Installation
 
-You will need to install [node.js](<[https://nodejs.org/en/](https://nodejs.org/en/)>) in order to run **jest** tests
+You will need to install [node.js](https://nodejs.org/en/) in order to run **jest** tests
 
 ## Run Tests
 
