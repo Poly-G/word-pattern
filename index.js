@@ -10,24 +10,26 @@
 //   pattern = "abba", str = "dog dog dog dog" --> false
 
 function wordPattern(pattern, str) {
-  str = str.split(" ");
-  pattern = pattern.split("");
+  let splitStr = str.split(" ");
+  let splitPat = pattern.split("");
 
-  if (str.length !== pattern.length) {
+  // checking string length
+  if (splitStr.length !== splitPat.length) {
     return false;
   }
 
   let strMap = new Map();
   let patMap = new Map();
 
-  for (let i = 0; i < str.length; i++) {
-    strMap.set(str[i], pattern[i]);
-    patMap.set(pattern[i], str[i]);
+  for (let i = 0; i < splitStr.length; i++) {
+    strMap.set(splitStr[i], splitPat[i]);
+    patMap.set(splitPat[i], splitStr[i]);
   }
 
-  strValues = strMap.values();
+  let strValues = strMap.values();
 
   if (
+    // checking object length
     strMap.size !== patMap.size ||
     strValues.next().value === strValues.next().value
   ) {
