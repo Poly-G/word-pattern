@@ -12,7 +12,7 @@ test('pattern = "aaaa", str = "dog dog dog dog" should return true', () => {
   expect(wordPattern("aaaa", "dog dog dog dog")).toBeTruthy();
 });
 
-test('pattern = "aaaa", str = "dog dog cat cat" should return true', () => {
+test('pattern = "aabb", str = "dog dog cat cat" should return true', () => {
   expect(wordPattern("aabb", "dog dog cat cat")).toBeTruthy();
 });
 
@@ -26,4 +26,8 @@ test('pattern = "aaaa", str = "dog cat cat dog" should return false', () => {
 
 test('pattern = "abba", str = "dog dog dog dog" should return false', () => {
   expect(wordPattern("abba", "dog dog dog dog")).toBeFalsy();
+});
+
+test('pattern = "ba", str = "dog dog dog dog" should return false', () => {
+  expect(wordPattern("ba", "dog dog dog dog")).toBeFalsy();
 });
