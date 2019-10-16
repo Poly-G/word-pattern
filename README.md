@@ -1,3 +1,9 @@
+![Coverage lines](https://img.shields.io/badge/Coverage:lines-100-green.svg)
+![Coverage functions](https://img.shields.io/badge/Coverage:functions-100-green.svg)
+![Coverage branches](https://img.shields.io/badge/Coverage:branches-100-green.svg)
+![Coverage statements](https://img.shields.io/badge/Coverage:statements-100-green.svg)
+<br />
+
 # Word Pattern
 
 ## Code Challenge Directions
